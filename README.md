@@ -1,4 +1,4 @@
-<h1>☕ Brewtiful – Customizing Coffee Orders</h1>
+<h1>Brewtiful – Customizing Coffee Orders</h1>
 
 <p>
 A popular coffee shop, <strong>"Brewtiful,"</strong> wants a flexible and extensible way to calculate 
@@ -9,7 +9,7 @@ additions while keeping all components consistent.
 
 <hr>
 
-<h2>⭐ Key Requirements</h2>
+<h2>Key Requirements</h2>
 
 <h3>1. Core Component</h3>
 <p>
