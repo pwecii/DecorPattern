@@ -1,10 +1,20 @@
-<h1>Brewtiful – Customizing Coffee Orders</h1>
+<h1>Brewtiful – Coffee Customization System</h1>
 
 <p>
-A popular coffee shop, <strong>"Brewtiful,"</strong> wants a flexible and extensible way to calculate 
-the cost and list the ingredients of customized coffee orders. Customers can choose a basic coffee 
-type and then add various toppings or flavor shots. The system must support any combination of 
-additions while keeping all components consistent.
+The <strong>Brewtiful Coffee Customization System</strong> is a project designed to demonstrate how to build a flexible 
+and scalable coffee-ordering application using the <strong>Decorator Design Pattern</strong>. This design allows customers 
+to choose a base coffee and enhance it with any number of additions such as milk, sugar, caramel syrup, or whipped cream. 
+All components follow a consistent interface, enabling seamless wrapping of additions around other additions or the base coffee itself.
+</p>
+
+<hr>
+
+<h2>Project Overview</h2>
+
+<p>
+This project showcases how a coffee shop like <strong>"Brewtiful"</strong> can offer customizable drinks while keeping the 
+code maintainable, modular, and easy to extend. The system is built with the idea that every coffee order starts with a 
+base component, and customers can apply multiple dynamic enhancements as needed.
 </p>
 
 <hr>
@@ -13,13 +23,16 @@ additions while keeping all components consistent.
 
 <h3>1. Core Component</h3>
 <p>
-A basic coffee (e.g., <em>Espresso</em>, <em>Black Coffee</em>) with a base cost.
+The system must include at least one basic coffee type (e.g., <em>Black Coffee</em>, <em>Espresso</em>).  
+Each base coffee has its own cost.
 </p>
 
 <hr>
 
 <h3>2. Dynamic Enhancements</h3>
-<p>The coffee may include optional additions like:</p>
+<p>
+Customers can add optional ingredients to their drink, such as:
+</p>
 
 <ul>
     <li>Milk</li>
@@ -29,34 +42,36 @@ A basic coffee (e.g., <em>Espresso</em>, <em>Black Coffee</em>) with a base cost
 </ul>
 
 <p>
-These additions must be applied <strong>on top of</strong> the basic coffee.
+These additions must apply an extra cost and be appended to the drink’s description.
 </p>
 
 <hr>
 
 <h3>3. Combinability</h3>
 <p>
-Customers must be able to combine multiple additions in any order.
+The system must support combining multiple additions in any order.
 </p>
 
 <blockquote>
     Example: <em>Espresso with Milk and Caramel Syrup</em>
 </blockquote>
 
+<p>There is no limit to how many additions can be applied.</p>
+
 <hr>
 
 <h3>4. Interface Consistency</h3>
 <p>
-All components—including the basic coffee and all additions—should share a 
-<strong>common interface</strong>. This allows:
+All components — both the base coffee and the added ingredients — must share the same interface.  
+This ensures:
 </p>
 
 <ul>
-    <li>Decorators to wrap the base coffee</li>
-    <li>Decorators to wrap other decorators</li>
+    <li>Decorators (additions) can wrap the base coffee.</li>
+    <li>Decorators can also wrap <strong>other decorators</strong>.</li>
 </ul>
 
 <p>
-This ensures full flexibility and support for unlimited customization combinations.
+This design enables unlimited, flexible customization of coffee orders.
 </p>
 
